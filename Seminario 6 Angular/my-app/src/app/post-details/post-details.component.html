@@ -1,0 +1,25 @@
+<button *ngIf="!update" (click)="updateEdit(true)">Modo Edición</button>
+<button *ngIf="update" (click)="updateEdit(false)">Modo Lectura</button>
+
+<div *ngIf="update">
+  <form>
+    <div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" ><br>
+    </div>
+    <div>
+      <label for="content: string;">Content:</label>
+      <input type="text" id="content: string;" name="content: string;" ><br>
+  </div>
+  <button *ngIf="update" type="submit">Update User Details</button> 
+  </form>
+</div>
+
+<div *ngIf="post">
+  <h2>{{post.title}}</h2>
+  <div><span>ID:</span> {{post._id}}</div>
+  <div><span>User ID:</span> {{post.author}}</div>
+  <div><span>Title:</span> {{post.title}}</div>
+  <div><span>Content:</span> {{post.content}}</div>
+</div>
+  
