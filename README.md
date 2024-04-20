@@ -1,1 +1,0 @@
-# EA_Seminarios_Carles_Sanchez
